@@ -1,0 +1,12 @@
+sudo apt install ufw  # Install firewall
+
+sudo ufw default deny incoming  # Block all incoming connections
+
+sudo ufw allow ssh  # Allow SSH for remote management
+sudo ufw allow http  # Allow web traffic (if hosting a server)
+
+sudo ufw enable  # Activate firewall
+
+
+
+sudo ufw status  # List active rules
